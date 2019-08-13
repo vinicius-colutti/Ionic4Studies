@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+       Search Bar
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-searchbar mode="ios" [(ngModel)]="nome" (ionInput)="filtrarItens()">
+
+  </ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let pessoa of pessoasFiltradas">
+      {{pessoa.nome}}
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<!-- Animated Searchbar -->
+<ion-searchbar animated></ion-searchbar>
+<!-- Searchbar with a custom debounce -->
+<ion-searchbar debounce="500"></ion-searchbar>

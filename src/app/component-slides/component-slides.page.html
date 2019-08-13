@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+     Slide
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides pager="true">
+    <ion-slide>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h1>Curso de ionic4</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-img src="assets/slide1.png" ></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="assets/slide2.png"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="assets/slide3.png"></ion-img>
+    </ion-slide>
+    <ion-slide>
+        <ion-button expand="block" (click)="comecar()">Começar curso</ion-button>
+      </ion-slide>
+  </ion-slides>
+
+</ion-content>

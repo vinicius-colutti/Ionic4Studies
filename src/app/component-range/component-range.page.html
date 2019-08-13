@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+       Range
+      </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-range pin="true" >
+
+      </ion-range>
+    </ion-item>
+    <ion-item>
+        <ion-range pin="true" color="danger">
+  
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range min="10" max="40" pin="true" color="danger">
+          <ion-label slot="start">Min:</ion-label>
+          <ion-label slot="end">Max:</ion-label>
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range min="10" max="40" pin="true" color="danger">
+          <ion-icon size="small" slot="start" name="sunny"></ion-icon>
+          <ion-icon size="small" slot="end" name="sunny"></ion-icon>
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range min="1000" max="2000" step="100" snaps="true" pin="true" color="danger">
+          
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range dualKnobs="true" min="18" max="30" step="2" snaps="true" pin="true" color="danger">
+          
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range disabled min="18" max="30" step="2" snaps="true" pin="true" color="danger">
+          
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range mode="ios" min="18" max="30" step="2" snaps="true" pin="true" color="danger">
+          
+        </ion-range>
+    </ion-item>
+    <ion-item text-center>
+        <ion-range mode="md" min="500" max="20000" step="2" value="1500" snaps="true" pin="true" color="danger">
+          
+        </ion-range>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

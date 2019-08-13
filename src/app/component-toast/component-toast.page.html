@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+       Toast
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-button expand="block" (click)="showToast()">Exibir Toast default</ion-button>
+  <ion-button expand="block" (click)="showToastAlinhamento('center')">Exibir Toast alinhado</ion-button>
+</ion-content>
